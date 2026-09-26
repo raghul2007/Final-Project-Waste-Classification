@@ -1,32 +1,24 @@
-# Final Project — Classify Waste Products Using Transfer Learning
+# Final Project - Classify Waste Products Using Transfer Learning
 
-EcoClean waste classification project using VGG16 transfer learning.
+## Important dataset note
+The course materials available for this project did not include a dataset. This submission therefore contains a small synthetic demonstration dataset so the notebook can be executed end-to-end. It is not an official Coursera/IBM dataset.
 
-## Graded Tasks
-1. Print TensorFlow version
-2. Create `test_generator` using `test_datagen`
-3. Print `len(train_generator)`
-4. Print model summary
-5. Compile the model
-6. Extract-features accuracy curves
-7. Fine-tuned loss curves
-8. Fine-tuned accuracy curves
-9. Extract-features test image at `index_to_plot = 1`
-10. Fine-tuned test image at `index_to_plot = 1`
+## Graded tasks
+The notebook contains separate cells for:
+1. TensorFlow version
+2. `test_generator`
+3. `len(train_generator)`
+4. `model.summary()`
+5. model compilation
+6. extract-features accuracy curves
+7. fine-tuned loss curves
+8. fine-tuned accuracy curves
+9. extract-features test image (`index_to_plot = 1`)
+10. fine-tuned test image (`index_to_plot = 1`)
 
-## Dataset structure
+The graded task cells intentionally do not contain the text `#Pre-Defined Data`.
 
-```text
-dataset/
-  train/
-    organic/
-    recyclable/
-  validation/
-    organic/
-    recyclable/
-  test/
-    organic/
-    recyclable/
-```
+## Running
+Install dependencies and run the notebook from top to bottom. VGG16 uses ImageNet pretrained weights, so the first model creation may require internet access to download the weights if they are not already cached.
 
-Place the actual course images into these folders before training for genuine results.
+Before submitting to Coursera, use **Run All** and save the notebook so that the required outputs and plots are stored in the `.ipynb` file.
