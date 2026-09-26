@@ -1,25 +1,32 @@
-# Final Project - Classify Waste Products Using Transfer Learning
+# Final Project — Classify Waste Products Using Transfer Learning
 
-This project implements an AI-powered binary waste classifier for EcoClean using transfer learning with VGG16.
+EcoClean waste classification project using VGG16 transfer learning.
 
-## Classes
-- Organic
-- Recyclable
-
-## Notebook
-Open `Final project.ipynb` and run all cells from top to bottom.
-
-## Required Tasks
+## Graded Tasks
 1. Print TensorFlow version
 2. Create `test_generator` using `test_datagen`
-3. Print length of `train_generator`
+3. Print `len(train_generator)`
 4. Print model summary
 5. Compile the model
-6. Plot extract-feature training/validation accuracy
-7. Plot fine-tuned training/validation loss
-8. Plot fine-tuned training/validation accuracy
-9. Plot test image using Extract Features Model with `index_to_plot = 1`
-10. Plot test image using Fine-Tuned Model with `index_to_plot = 1`
+6. Extract-features accuracy curves
+7. Fine-tuned loss curves
+8. Fine-tuned accuracy curves
+9. Extract-features test image at `index_to_plot = 1`
+10. Fine-tuned test image at `index_to_plot = 1`
 
-## Dataset
-A small synthetic fallback dataset is generated automatically if no real images are placed in the dataset folders. Replace it with the course's real waste images when available for genuine model performance.
+## Dataset structure
+
+```text
+dataset/
+  train/
+    organic/
+    recyclable/
+  validation/
+    organic/
+    recyclable/
+  test/
+    organic/
+    recyclable/
+```
+
+Place the actual course images into these folders before training for genuine results.
